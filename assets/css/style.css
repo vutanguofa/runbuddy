@@ -1,0 +1,53 @@
+/* Makes every element on the page to not have any margin or border unless we explicitly tell it to. */
+* {  /* The "*" means universal selector; a catch-all selector that says, "I won't match one thing—I'll match everything!"*/
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Start of styles to <body> */
+body {
+  color: #39a6b2; /* Sets the font color */
+  font-family: Helvetica, Arial, sans-serif; /* The font-family property sets the font to all the font in the body to Helvetica. The other two values for the font-family definition are included just in case the user's computer does not have Helvetica installed. That way, they can fall back to those other font choices. */
+  /* background-color: tomato; */
+} 
+/* End of styles to <body> */
+
+
+/* Start of styles to <header> */
+header {
+  padding: 20px 35px; /* positions when using 2 values: top and bottom (20px), left and right (35px) */ /* positions when using 4 values: top, right, bottom, left */ 
+  background-color: #39a6b2; 
+  /* We just told the <header> element to apply padding, which means to add space between where the <header> starts and where the content inside it starts. We also applied a background-color of a light blue / teal. */
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #fce138;
+  margin: 0; /* top, right, bottom, left */
+  display: inline; /* block (top to bottom like a list) and inline (left to right on one line horizontally) */
+}
+
+header a {
+  text-decoration: none; /* underline, strikethrough, or overline */
+  color: #fce138;
+}
+
+header nav {
+  float: right; /* We took the <nav> element and moved it to the right side */
+  margin: 7px 0; /* 7px of space added to the top and bottom; 0px to the left and right */
+}
+
+header nav ul li {
+  display: inline; 
+}
+
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 22px;
+}
+/* End of styles to <header> */
+
+
