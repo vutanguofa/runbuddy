@@ -52,6 +52,31 @@ header nav ul li a {
 /* End of styles to <header> */
 
 
+/* Start of styles to <section> */
+section {
+  padding: 60px;
+}
+/* End of styles to <section> */
+
+
+/* Hero Style Start */
+.hero {
+  background-image: url("../images/hero-bg.jpg");
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-form {
+  background-color: #fce138;
+  padding: 20px;
+  width: 500px;
+  color: #024e76;
+  border: solid 3px #024e76; /* This example will apply the property values to all sides: style, width, color */ /* Can be specificed if only one side is needed: border-top, border-bottom, border-left, border-right */
+}
+/* Hero Style End */
+
+
 /* Start of styles to <footer> */
 footer {
   background: #fce138;
