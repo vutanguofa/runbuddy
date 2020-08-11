@@ -2,6 +2,7 @@
 * {  /* The "*" means universal selector; a catch-all selector that says, "I won't match one thing—I'll match everything!"*/
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* border-box or content-size */ /* ignore padding in the overall width */
 }
 
 
@@ -51,3 +52,29 @@ header nav ul li a {
 /* End of styles to <header> */
 
 
+/* Start of styles to <footer> */
+footer {
+  background: #fce138;
+  width: 100%;
+  padding: 40px 35px;
+}
+
+/* Apply style to the left <h2> element. */
+footer h2 {
+  display: inline;
+  color: #024e76;
+  font-size: 30px;
+  margin: 0;
+}
+
+/* Apply style to the right <div> container that holds the rest of the content. */
+footer div {
+  float: right;
+  line-height: 1.5; /* This assigns how much vertical space should be between lines of text content. The value (1.5) means we want the spacing to be 1.5 times the size of the font. This value varies depending on what font we're using, but 1.5 is a good baseline. The idea behind this is we don't want our lines of text too close or too far apart. This lets us finesse the spacing and make it more readable. */
+  text-align: right; /* left, right, center, or justified */
+}
+
+/* Apply style to the <a> element. */
+footer a {
+  color: #024e76;
+}
